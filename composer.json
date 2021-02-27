@@ -1,0 +1,35 @@
+{
+    "name": "mohammadmehrabani/repository-generator",
+    "description": "Quickly generating repository and interfaces from existing model files",
+    "keywords": [
+        "laravel",
+        "repository"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mohammad mehrabani",
+            "email": "mehrabani.developer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5.0|~6.0|~7.0|^8.0",
+        "illuminate/console": "~5.0|~6.0|~7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MohammadMehrabani\\RepositoryGenerator\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MohammadMehrabani\\RepositoryGenerator\\RepositoryGeneratorServiceProvider"
+            ]
+        }
+    }
+}

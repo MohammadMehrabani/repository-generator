@@ -1,0 +1,28 @@
+<?php
+
+namespace ___SERVICE_PROVIDER_NAMESPACE___;
+
+use Illuminate\Support\ServiceProvider;
+
+class ___SERVICE_PROVIDER_NAME___ extends ServiceProvider
+{
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+    }
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}

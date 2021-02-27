@@ -1,0 +1,9 @@
+<?php
+namespace __INTERFACE_NAMESPACE__;
+
+__USE_STATEMENT_FOR_INTERFACE__
+
+interface __INTERFACE__ extends __MAIN_INTERFACE__
+{
+
+}
