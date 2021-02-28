@@ -92,12 +92,14 @@ All listed methods have same usage as Eloquent
 | **with**      | $repo->with('relation')->get();
 | **count**     | $repo->where('column', 'value')->count();
 | **find**      | $repo->find($id);
+|               | $repo->find($id, ['column1', 'column2']);
 | **first**     | $repo->first();
 |               | $repo->first(['column1', 'column2']);
 | **value**     | $repo->where('id', $id)->value('name');
 | **orderBy**   | $repo->orderBy('column')->get(); // default 'asc'
 |               | $repo->orderBy('column', 'desc')->get();
 | **get**       | $repo->get();
+|               | $repo->get(['column1', 'column2']);
 | **paginate**  | $repo->paginate(20);
 | **create**    | $repo->create(['column1' => 'value', 'column2' => 'value']);
 | **update**    | $repo->update($id, ['column1' => 'value', 'column2' => 'value']);
