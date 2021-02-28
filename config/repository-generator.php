@@ -40,8 +40,8 @@ return [
     | If you're working with your customized repository file
     | You should change these values like below,
     |
-    | 'main_repository_file' => 'CustomFile.php'
-    | 'main_repository_class' => 'App\Custom\Repository:class'
+    | 'main_repository_file' => 'CustomRepository.php'
+    | 'main_repository_class' => 'App\CustomRepository:class'
     */
 
     // Only file name of the file because full path can cause errors.
@@ -57,9 +57,19 @@ return [
     |--------------------------------------------------------------------------
     |
     | The main interface class, other interfaces will be extended from this
+    |
+    | If you're working with your customized interface file
+    | You should change these values like below,
+    |
+    | 'main_interface_file' => 'CustomRepositoryInterface.php'
+    | 'main_interface_class' => 'App\CustomRepositoryInterface:class'
     */
 
+    // Only file name of the file because full path can cause errors.
+    // We're gonna use "interface_directory" config value for it.
     'main_interface_file' => 'RepositoryInterface.php',
+
+    // Class name as string
     'main_interface_class' => \MohammadMehrabani\RepositoryGenerator\RepositoryInterface::class,
 
     /*
